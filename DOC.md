@@ -35,6 +35,27 @@
 + globalCollateralRatio()
 
     理论质押率
+    
++ mint(address collateralToken, uint256 collateralAmount, uint256 minimumReceived)
 
+    100% 抵押物增发
+    
+    @collateralToken           抵押物代币
+    @collateralAmount          抵押物数量
+    @minimumReceived           最小允许收到的数量
 
++ mint(uint256 shareAmount, uint256 minimumReceived)
 
+    100% KUN抵押增发
+    
+    @shareAmount     KUN的数量
+    @minimumReceived 最小允许收到的数量
+
++ mint(address collateralToken, uint256 collateralAmount, uint256 shareAmount, uint256 minimumReceived)
+    
+    混合抵押增发
+    
+    @collateralToken 抵押物代币
+    @collateralAmount 抵押物数量
+    @shareAmount KUN数量
+    @minimumReceived 最小允许收到的数量
