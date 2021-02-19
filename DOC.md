@@ -40,11 +40,11 @@
 
     100% 抵押物增发
     
-    @collateralToken           抵押物代币
+    @collateralToken           抵押物地址
     
     @collateralAmount          抵押物数量
     
-    @minimumReceived           最小允许收到的数量
+    @minimumReceived           最小允许收到的QSD数量
 
 + mint(uint256 shareAmount, uint256 minimumReceived)
 
@@ -52,16 +52,75 @@
     
     @shareAmount     KUN的数量
     
-    @minimumReceived 最小允许收到的数量
+    @minimumReceived 最小允许收到的QSD数量
 
 + mint(address collateralToken, uint256 collateralAmount, uint256 shareAmount, uint256 minimumReceived)
     
     混合抵押增发
     
-    @collateralToken 抵押物代币
+    @collateralToken 抵押物地址
     
     @collateralAmount 抵押物数量
     
     @shareAmount KUN数量
     
-    @minimumReceived 最小允许收到的数量
+    @minimumReceived 最小允许收到的QSD数量
+    
+   
+ + redeem(uint256 stableAmount, address receivedCollateralToken, uint256 minimumReceivedCollateralAmount)
+    
+    100%赎回抵押物
+    
+    @stableAmount 要赎回的抵押物价值(QSD的数量)
+    
+    @receivedCollateralToken 要赎回的抵押物地址
+    
+    @minimumReceivedCollateralAmount 最小允许收到的抵押物数量
+    
+    
+ + redeem(uint256 stableAmount, address collateralToken, uint256 minimumReceivedCollateralAmount, uint256 minimumReceivedShareAmount)
+
+    混合赎回
+    
+    @stableAmount 要赎回的抵押物价值(QSD的数量)
+    
+    @collateralToken 要赎回的抵押物地址
+    
+    @minimumReceivedCollateralAmount 最小允许收到的抵押物数量
+    
+    @minimumReceivedShareAmount 最小允许收到的KUN数量
+    
+ + redeem(uint256 stableAmount, uint256 minimumReceivedShareAmount)
+
+    100%赎回KUN
+    
+    @stableAmount 要赎回的抵押物价值(QSD的数量)
+    
+    @minimumReceivedShareAmount 最小允许收到的抵押物数量
+    
+ + claimCollateral()
+
+    取回抵押物
+
+ + recollateralize(address collateralToken, uint256 collateralAmount, uint256 minimumReceivedShareAmount)
+
+    补充抵押物(再抵押)
+
+    @collateralToken 要补充的抵押物地址
+    
+    @collateralAmount 要补充的抵押物数量
+    
+    @minimumReceivedShareAmount 最小允许收到的DBK数量
+    
+ + buyback(uint256 shareAmount, address receivedCollateralToken)
+ 
+    回购抵押物
+    
+    @shareAmount 要回购的数量(以KUN计)
+    
+    @receivedCollateralToken 要回购的抵押物地址
+    
+    
+    
+    
+    
