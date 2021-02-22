@@ -123,7 +123,11 @@
     
     @receivedCollateralToken 要回购的抵押物地址
     
+ + redeemedShares(address account)
+
+   获取用户在系统中可取回的KUN的余额.
+   
+ + redeemedCollaterals(address account, address token);
     
-    
-    
-    
+   获取用户在系统中可取回的抵押物的余额.
+   
