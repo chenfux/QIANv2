@@ -35,6 +35,9 @@
 + globalCollateralRatio()
 
     理论质押率
++ getCollateralizedBalance(address token)
+
+    获取池抵押物余额
     
 + mint(address collateralToken, uint256 collateralAmount, uint256 minimumReceived)
 
