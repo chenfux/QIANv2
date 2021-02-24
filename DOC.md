@@ -31,6 +31,10 @@
 + getExcessCollateralValue()
 
     获取系统盈余的抵押物价值
+    
++ getGapCollateralValue
+
+    获取系统抵押物缺口价值
 
 + globalCollateralRatio()
 
