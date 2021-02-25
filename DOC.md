@@ -134,4 +134,26 @@
  + redeemedCollaterals(address account, address token);
     
    获取用户在系统中可取回的抵押物的余额.
+
+
+ + exchangeShareBond(uint256 bondAmount)
+
+   DBK 兑换成 KUN
    
+   @bondAmount DBK的数量
+   
+ + mintStableBond(uint256 stableAmount, uint256 minimumReceivedBondAmount)
+
+   以QSD购买稳定币债券(DBQ)
+   
+   @stableAmount 要购买的数量(以QSD计)
+   
+   @minimumReceivedBondAmount 最小允许收到的DBQ的数量
+   
+ + redeemStableBond(uint256 stableAmount, uint256 minimumReceivedStableAmount)
+
+   以DBQ赎回稳定币(QSD)
+   
+   @stableAmount 要赎回的QSD数量
+   
+   @minimumReceivedStableAmount 最小允许收到的QSD数量
