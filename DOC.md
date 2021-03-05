@@ -157,3 +157,34 @@
    @stableAmount 要赎回的QSD数量
    
    @minimumReceivedStableAmount 最小允许收到的QSD数量
+
+
++ stake(uint256 amount)
+    
+  活期锁定流动性代币
+  
+  @amount 锁定数量
+  
++ stakeLocked(uint256 amount, uint256 secs)
+
+  定期锁定流动性代币
+  
+  @amount 锁定数量
+  @secs 锁定时间(秒)
+  
+ + withdraw(uint256 amount)
+    
+    取回活期锁定的流动性代币
+  
+    @amount 锁定数量
+  
+  + withdrawLocked(bytes32 kek_id)
+
+    取回定期锁定的流动性代币
+  
+    @kek_id 锁仓ID
+  
+  + getReward()
+  
+    取回收益
+  
