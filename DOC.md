@@ -188,3 +188,7 @@
   
     取回收益
   
+  + lockedStakes(address account)
+
+    获取用户的锁定列表
+   
