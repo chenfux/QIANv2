@@ -192,3 +192,16 @@
 
     获取用户的锁定列表
    
+  + unlockedBalanceOf(address account)
+    
+    获取用户未锁定的流动性代币数量
+    
+  + balanceOf(address account)
+    
+    获取用户锁定的和未锁定的流动性代币总数量
+    
+  + earned(address account)
+    
+    获取用户可取的奖励数量
+    
+    
