@@ -186,11 +186,7 @@
   
   + getReward()
   
-    取回收益
-  
-  + lockedStakes(address account)
-
-    获取用户的锁定列表
+    取回收益  
    
   + unlockedBalanceOf(address account)
     
@@ -204,4 +200,6 @@
     
     获取用户可取的奖励数量
     
-    
+  + lockedStakesOf(address account)
+  
+    获取用户的锁定列表
